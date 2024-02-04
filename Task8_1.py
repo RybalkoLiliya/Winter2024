@@ -11,9 +11,12 @@ def swap(str):
             new_str.append('ЦАГТ')
         elif str[i] == 'ТЦ':
             new_str.append('ТАГЦ')
+        else:
+            new_str.append(str[i])
     return print(''.join(new_str))
 
 swap(str)
+
 
 
 
