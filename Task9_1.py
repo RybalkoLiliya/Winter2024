@@ -7,9 +7,9 @@ conv_dict={
 }
 
 def conv(n):
+    rna_string = ''
     for l in n:
-        rna_string = ''
-        rna_string = rna_string + conv_dict[l.upper()]
+        rna_string = conv_dict[l.upper()]
         print(rna_string, end = '')
 
 conv(n)
