@@ -1,15 +1,15 @@
 x = '1-2,4-4,3-6,11-15,15'
 
 def res(x):
-    res = []
+    lst = []
     for s in x.split(','):
         if '-' in s:
             start, end = map(int, s.split('-'))
-            res.append(start)
+            lst.append(start)
             for i in range(start + 1, end + 1):
-                res.append(i)
+                lst.append(i)
         else:
-            res.append(int(s))
-    return print(res)
+            lst.append(int(s))
+    return print(lst)
 
 res(x)
