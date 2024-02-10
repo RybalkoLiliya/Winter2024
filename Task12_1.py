@@ -4,7 +4,8 @@ def res(lst):
     lst_max = []
     lst_min = [i for i in range(len(lst)) if lst[i] == min(lst)]
     lst_max = [i for i in range(len(lst)) if lst[i] == max(lst)]
-    return print(lst_min, lst_max)
+    return print(f'{lst_min}, {lst_max}')
 
 res(lst)
+
 
