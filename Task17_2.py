@@ -8,12 +8,12 @@ def uppercase_deco(func):
             v = kwargs[j]
             if type(v) == str:
                 res.append(v.upper())
-        return print(res)
+        return res
     return wrapper
 
 @uppercase_deco
 def abc(*args, **kwargs):
     return
-abc(5, 'Try', a = 'Go', b = 7)
+print(abc(5, 'Try', a = 'Go', b = 7))
 
 
